@@ -69,7 +69,7 @@ st.markdown(
     """
     <div class="header-banner">
         <h1>Simple Streamlit App</h1>
-        <p>Assignment 1 · Pusan National University</p>
+        <p>Assignment 1 · AI Programming</p>
     </div>
     """,
     unsafe_allow_html=True
