@@ -35,9 +35,16 @@ st.markdown(
         width: 100%;
         text-align: center;
         padding: 10px;
+        background-color: #FFFFFF;  /* Fondo blanco */
+        border-top: 1px solid #ddd;
+    }
+    .footer img {
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .footer span {
         color: #2E5FA7;
         font-size: 14px;
-        border-top: 1px solid #ddd;
     }
     </style>
     """,
@@ -47,7 +54,6 @@ st.markdown(
 # -------------------------------
 # Title and Introduction
 # -------------------------------
-st.image("https://upload.wikimedia.org/wikipedia/en/4/44/Pusan_National_University.png", width=120)
 st.title("Simple Streamlit App")
 st.subheader("Assignment 1 - Pusan National University")
 
@@ -85,12 +91,13 @@ st.metric(label=f"Cumulative Sum up to {label}", value=cumulative_sum)
 st.divider()
 
 # -------------------------------
-# Footer
+# Footer with Logo + Name
 # -------------------------------
 st.markdown(
     """
     <div class="footer">
-        Developed by <strong>Camila Estefanía Painefilo Hermosilla</strong> | IBA Lab - Pusan National University
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG-gebeljHEt2YbEgx3RJjHdrlpcPCwmhMiA&s" width="80">
+        <span>Developed by <strong>Camila Estefanía Painefilo Hermosilla</strong> | IBA Lab - Pusan National University</span>
     </div>
     """,
     unsafe_allow_html=True
